@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="scripts" href="/scripts.js">
+    <link rel="db" href="/db.json">
+    <title>Test</title>
+</head>
+<body>
+    <div id="form-container">
+        <form id="registration-form" class="logIn-form">
+          <h2>User Registration</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required autocomplete="new-password">
+          <br>
+          <button type="submit" class="cool-button">Submit</button>
+        </form>
+    
+        <div id="validation-message"></div>
+      </div>
+        
+      
+    <script src="/scripts.js"></script>
+</body>
+</html>

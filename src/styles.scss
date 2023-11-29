@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(83, 51, 9);
+  font-family: 'DM Serif Display', serif;
+  display: flex;
+  justify-content: center;
+}
+
+.logIn-form {
+  align-items: center;
+  margin: 40px;
+  padding: 40px;
+  border: 4px solid black;
+  color: rgb(255, 136, 0);
+  border-radius: 6px;
+
+
+  
+}
+.cool-button {
+  background: #fe8635;
+  border-bottom: 3px solid #b55f3f;
+  -webkit-box-shadow: inset 0 -3px #b55f3f;
+  box-shadow: inset 0 -3px #b55f3f;
+  color: rgb(51, 28, 2);
+  font-family: 'DM Serif Display', serif;
+  cursor: pointer;
+
+}
+.validationMessage {
+ text-align: center;
+ font-size: 30px;
+ color: rgb(255, 136, 0);
+
+}
+
