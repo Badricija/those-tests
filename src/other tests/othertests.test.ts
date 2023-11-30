@@ -39,17 +39,20 @@ describe('multiply', () => {
   });
 });
 describe('processData', () => {
-  it('should return the sum of all numbers in the array', () => {
-    expect(processData([1, 2, 3, 4, 5])).toBe(15);
-  });
   it('should return 0 for an empty array', () => {
     expect(processData([])).toBe(0);
   });
-  it('should return the correct sum when array contains negative numbers', () => {
-    expect(processData([-1, -2, -3, 4, 5])).toBe(3);
+  it('should return the same number for an array with a single element', () => {
+    expect(processData([5])).toBe(5);
   });
-  it('should correctly process an array with a single number', () => {
-    expect(processData([100])).toBe(100);
+  it('should return the sum of all elements in a non-empty array', () => {
+    expect(processData([1, 2, 3, 4, 5])).toBe(15);
+  });
+  it('should correctly sum to a negative number for an array with all negative numbers', () => {
+    expect(processData([-1, -2, -3, -4, -5])).toBe(-15);
+  });
+  it('should correctly sum to the right number for an array with both positive and negative numbers', () => {
+    expect(processData([-1, 2, -3, 4, -5])).toBe(-3);
   });
 });
 jest.mock('axios');
